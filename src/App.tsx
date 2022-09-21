@@ -1,10 +1,9 @@
-import SocialMedia from "./components/Hooks/Effect";
-
+import SlowBlock from "./components/Hooks/Memo";
 
 function App() {
   return (
     <div className="App">
-      <SocialMedia />
+      <SlowBlock />
     </div>
   );
 }
