@@ -6,20 +6,24 @@ export default function SlowBlock() {
         return 0
     })
 
-    let doubeNumber = useMemo(() => slowFunctionDouble(number), [number])
+    let doubeNumber = useMemo(() => {
+        return slowFunctionDouble(number)
+    }, [number])
 
     const [theme, setTheme] = useState(() => {
         return 'dark'
     })
 
-    let themeStyle = {
-        backgroundColor: theme === 'dark' ? 'black' : 'white',
-        color: theme === 'dark' ? 'white' : 'black',
-        padding: '5vw 2vh',
-        border: '1px solid grey',
-        marginTop: '2vh',
-        fontWeight: 'bold'
-    }
+    let themeStyle = useMemo(() => {
+        return {
+            backgroundColor: theme === 'dark' ? 'black' : 'white',
+            color: theme === 'dark' ? 'white' : 'black',
+            padding: '5vw 2vh',
+            border: '1px solid grey',
+            marginTop: '2vh',
+            fontWeight: 'bold'
+        }
+    } , [theme])
 
 
     function toggleTheme(){
