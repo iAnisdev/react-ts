@@ -1,11 +1,11 @@
-import React, { Component, useState } from "react";
+import { useState } from "react";
 
 export function UpdateComponent(OriginalComponent: any) {
-   
-    function UpdateComponent(){
+
+    function UpdateComponent() {
         const [counter, setCounter] = useState(0)
-    
-    
+
+
         function UpdateCounter() {
             setCounter(counter + 1)
         }
