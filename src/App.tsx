@@ -1,9 +1,10 @@
-import { StateCounter } from "./components/Hooks/StateCounter";
+import SocialMedia from "./components/Hooks/Effect";
+
 
 function App() {
   return (
     <div className="App">
-      <StateCounter />
+      <SocialMedia />
     </div>
   );
 }
