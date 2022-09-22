@@ -1,9 +1,10 @@
-import { CountUseReducer } from "./components/Hooks/Reducer";
+import InputComponent from "./components/Hooks/Custom/InputComonent";
+
 
 function App() {
   return (
     <div className="App">
-      <CountUseReducer />
+      <InputComponent />
     </div>
   );
 }
