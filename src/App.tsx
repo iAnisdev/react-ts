@@ -1,9 +1,13 @@
-import { RendingCount } from "./components/Hooks/Ref";
+import ContextMain from "./components/Hooks/Context/Main";
+
+import LanguageContextProvider from "./components/Contexts/LanguageContext";
 
 function App() {
   return (
     <div className="App">
-      <RendingCount />
+      <LanguageContextProvider>
+        <ContextMain />
+      </LanguageContextProvider>
     </div>
   );
 }
