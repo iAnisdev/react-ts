@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function Countger() {
+export function CountState() {
     const [counter, setCounter] = useState(() => {
         return 0
     })

@@ -1,13 +1,9 @@
-import ContextMain from "./components/Hooks/Context/Main";
-
-import LanguageContextProvider from "./components/Contexts/LanguageContext";
+import { CountUseReducer } from "./components/Hooks/Reducer";
 
 function App() {
   return (
     <div className="App">
-      <LanguageContextProvider>
-        <ContextMain />
-      </LanguageContextProvider>
+      <CountUseReducer />
     </div>
   );
 }
