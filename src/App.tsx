@@ -1,10 +1,10 @@
-import InputComponent from "./components/Hooks/Custom/InputComonent";
+import ShowPopup from "./components/Hooks/useLayoutEffect";
 
 
 function App() {
   return (
     <div className="App">
-      <InputComponent />
+      <ShowPopup />
     </div>
   );
 }
